@@ -1,5 +1,5 @@
 // 定时器
-let time = null;
+let time = 5;
 // 已选中的ID集合
 let selIds = [];
 $(function () {
@@ -27,7 +27,7 @@ $(function () {
             }
         }
         // 选中5个就停止
-        if (selIds.length === 5) {
+        if (selIds.length === 1) {
             clearInterval(time);
             $(".left-content ul li").removeClass("check");
         }
